@@ -2,7 +2,7 @@ if exists('b:current_syntax')
 	finish
 endif
 
-syntax match todoUndone /^- .\+/
+syntax match todoUndone /^\s*- .\+/
 
 highlight link todoUndone Statement
 
