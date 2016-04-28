@@ -1,5 +1,5 @@
 - command to escalate and "descalate" TODOs
-- allow any action on any TODO type
+v allow any action on any TODO type
 - fix highlighting (or just disable cursorline)
 - disable search highlighting
 - maybe try to clean up the search history after doing something
