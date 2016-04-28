@@ -6,9 +6,9 @@ let b:did_ftplugin = 1
 
 nnoremap <silent> <buffer> <Plug>TwodoNewTodoBelow o- 
 nnoremap <silent> <buffer> <Plug>TwodoNewTodoAbove O- 
-nnoremap <silent> <buffer> <Plug>TwodoMarkComplete m`:<c-u>s/\v^(\s*)- /\1v / \| nohlsearch<cr>``
-nnoremap <silent> <buffer> <Plug>TwodoMarkDeleted m`:<c-u>s/\v^(\s*)- /\1x / \| nohlsearch<cr>``
-nnoremap <silent> <buffer> <Plug>TwodoMarkPartiallyCompleted m`:<c-u>s/\v^(\s*)- /\1S / \| nohlsearch<cr>``
+nnoremap <silent> <buffer> <Plug>TwodoMarkComplete m`:<c-u>s/\v^(\s*)[-_!xS] /\1v / \| nohlsearch<cr>``
+nnoremap <silent> <buffer> <Plug>TwodoMarkDeleted m`:<c-u>s/\v^(\s*)[-_!vS] /\1x / \| nohlsearch<cr>``
+nnoremap <silent> <buffer> <Plug>TwodoMarkPartiallyCompleted m`:<c-u>s/\v^(\s*)[-_!xv] /\1S / \| nohlsearch<cr>``
 nnoremap <silent> <buffer> <Plug>TwodoRemoveOldTodos :<c-u>g/^\s*[vx] /d \| nohlsearch<cr>
 
 if !hasmapto('<Plug>TwodoNewTodoBelow') || !maparg('<leader>n', 'n')
