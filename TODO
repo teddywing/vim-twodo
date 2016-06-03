@@ -10,3 +10,5 @@ highlight todoUnimportant ctermfg=243
 
 
 Escalation and "descalation" should be an operator-pending mapping
+
+- Allow ranges in mappings
