@@ -1,4 +1,4 @@
-- command to escalate and "descalate" TODOs
+v command to escalate and "descalate" TODOs
 v allow any action on any TODO type
 - fix highlighting (or just disable cursorline)
 - disable search highlighting
