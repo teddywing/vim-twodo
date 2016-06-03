@@ -7,3 +7,6 @@ v allow any action on any TODO type
 
 
 highlight todoUnimportant ctermfg=243
+
+
+Escalation and "descalation" should be an operator-pending mapping
