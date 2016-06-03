@@ -10,6 +10,7 @@ nnoremap <silent> <buffer> <Plug>TwodoMarkComplete m`:<c-u>s/\v^(\s*)[-_!xS] /\1
 nnoremap <silent> <buffer> <Plug>TwodoMarkDeleted m`:<c-u>s/\v^(\s*)[-_!vS] /\1x / \| nohlsearch<cr>``
 nnoremap <silent> <buffer> <Plug>TwodoMarkPartiallyCompleted m`:<c-u>s/\v^(\s*)[-_!xv] /\1S / \| nohlsearch<cr>``
 nnoremap <silent> <buffer> <Plug>TwodoRemoveOldTodos :<c-u>g/^\s*[vx] /d \| nohlsearch<cr>
+nnoremap <silent> <buffer> <Plug>TwodoEscalate :<c-u>call todo#Escalate()<cr>
 nnoremap <silent> <buffer> <Plug>TwodoDescalate :<c-u>call todo#Descalate()<cr>
 
 if !hasmapto('<Plug>TwodoNewTodoBelow') || !maparg('<leader>n', 'n')
@@ -34,6 +35,10 @@ endif
 
 if !hasmapto('<Plug>TwodoRemoveOldTodos') || !maparg('<leader>R', 'n')
 	nmap <silent> <buffer> <leader>R <Plug>TwodoRemoveOldTodos
+endif
+
+if !hasmapto('<Plug>TwodoEscalate') || !maparg('<leader>=', 'n')
+	nmap <silent> <buffer> <leader>= <Plug>TwodoEscalate
 endif
 
 if !hasmapto('<Plug>TwodoDescalate') || !maparg('<leader>-', 'n')
