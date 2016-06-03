@@ -3,3 +3,4 @@ v allow any action on any TODO type
 - fix highlighting (or just disable cursorline)
 - disable search highlighting
 - maybe try to clean up the search history after doing something
+- use `Ignore` for low priority but have some minor colouring (maybe just the `_`) to distinguish these from completed and deleted tasks
