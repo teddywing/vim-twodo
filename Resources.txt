@@ -1,0 +1,7 @@
+Resources
+=========
+
+## Cursorline colouring
+- https://github.com/skammer/vim-css-color/issues/12
+- https://github.com/lilydjwg/colorizer/blob/master/autoload/colorizer.vim
+- https://github.com/ap/vim-css-color/commit/86ed589349bfe44182bbd38dcbb29d2634739623
