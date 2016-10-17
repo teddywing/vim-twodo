@@ -1,0 +1,110 @@
+*todo.txt*  To-do list syntax highlighting and mappings
+
+Author:  Teddy Wing <http://teddywing.com>
+License: GPLv3+
+Version: 0.0.1
+
+==============================================================================
+INTRODUCTION                                                            *todo*
+
+Syntax highlighting and mappings to view and manipulate to-do lists. Files
+should end in a `.todo` extension.
+
+==============================================================================
+EXAMPLE                                                         *todo-example*
+
+    - Regular priority to-dos are prefixed with a `- `
+    _ A low priority to-do
+    ! A high priority to-do
+    x A deleted to-do
+    S A partially completed to-do
+    v A completed to-do
+
+==============================================================================
+MAPPINGS                                                       *todo-mappings*
+
+				*todo-<Plug>TwodoNewTodoBelow*
+<Plug>TwodoNewTodoBelow
+	Add a new to-do below the current line.
+
+	Default: <leader>n
+
+				*todo-<Plug>TwodoNewTodoAbove*
+<Plug>TwodoNewTodoAbove
+	Add a new to-do above the current line.
+
+	Default: <leader>N
+
+				*todo-<Plug>TwodoMarkComplete*
+<Plug>TwodoMarkComplete
+	Mark the current to-do complete.
+
+	Default: <leader>c
+
+				*todo-<Plug>TwodoMarkDeleted*
+<Plug>TwodoMarkDeleted
+	Mark the current to-do deleted.
+
+	Default: <leader>d
+
+				*todo-<Plug>TwodoMarkPartiallyCompleted*
+<Plug>TwodoMarkPartiallyCompleted
+	Mark the current to-do partially complete.
+
+	Default: <leader>s
+
+				*todo-<Plug>TwodoRemoveOldTodos*
+<Plug>TwodoRemoveOldTodos
+	Remove todos marked complete and deleted.
+
+	Default: <leader>R
+
+				*todo-<Plug>TwodoEscalate*
+<Plug>TwodoEscalate
+	Increase the priority of the current to-do.
+
+	Default: <leader>=
+
+				*todo-<Plug>TwodoDescalate*
+<Plug>TwodoDescalate
+	Decrease the priority of the current to-do.
+
+	Default: <leader>-
+
+
+==============================================================================
+COLOURS                                                          *todo-colors*
+
+				*todo-todoUndone*
+todoUndone	A regular priority to-do.
+
+				*todo-todoImportant*
+todoImportant	To-do with important priority.
+
+				*todo-todoUnimportant*
+todoUnimportant	To-do with low priority.
+
+				*todo-todoCompleted*
+todoCompleted	Completed to-do.
+
+				*todo-todoDeleted*
+todoDeleted	Deleted to-do.
+
+
+==============================================================================
+LICENSE                                                         *todo-license*
+
+Vim-Twodo is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Vim-Twodo is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Vim-Twodo. If not, see <http://www.gnu.org/licenses/>.
+
+ vim:tw=78:ts=8:ft=help:norl:
