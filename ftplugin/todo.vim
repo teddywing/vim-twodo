@@ -3,6 +3,8 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
+" TODO: Add no_plugin_mappings or whatever
+
 
 nnoremap <silent> <buffer> <Plug>TwodoNewTodoBelow o- 
 nnoremap <silent> <buffer> <Plug>TwodoNewTodoAbove O- 
@@ -12,6 +14,9 @@ nnoremap <silent> <buffer> <Plug>TwodoMarkPartiallyCompleted m`:<c-u>s/\v^(\s*)[
 nnoremap <silent> <buffer> <Plug>TwodoRemoveOldTodos :<c-u>g/^\s*[vx] /d \| nohlsearch<cr>
 nnoremap <silent> <buffer> <Plug>TwodoEscalate :<c-u>call todo#Escalate()<cr>
 nnoremap <silent> <buffer> <Plug>TwodoDescalate :<c-u>call todo#Descalate()<cr>
+
+nnoremap <silent> <buffer> <Plug>TwodoNextIncomplete :<c-u>call todo#motion#NextIncomplete()<cr>
+nnoremap <silent> <buffer> <Plug>TwodoPreviousIncomplete :<c-u>call todo#motion#PreviousIncomplete()<cr>
 
 if !hasmapto('<Plug>TwodoNewTodoBelow') || !maparg('<leader>n', 'n')
 	nmap <silent> <buffer> <leader>n <Plug>TwodoNewTodoBelow
@@ -43,4 +48,12 @@ endif
 
 if !hasmapto('<Plug>TwodoDescalate') || !maparg('<leader>-', 'n')
 	nmap <silent> <buffer> <leader>- <Plug>TwodoDescalate
+endif
+
+if !hasmapto('<Plug>TwodoNextIncomplete') && !maparg(']u', 'n')
+	nmap <buffer> ]u <Plug>TwodoNextIncomplete
+endif
+
+if !hasmapto('<Plug>TwodoPreviousIncomplete') && !maparg('[u', 'n')
+	nmap <buffer> [u <Plug>TwodoPreviousIncomplete
 endif
