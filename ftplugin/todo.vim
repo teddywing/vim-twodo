@@ -52,12 +52,18 @@ if !hasmapto('<Plug>TwodoDescalate') || !maparg('<leader>-', 'n')
 	nmap <silent> <buffer> <leader>- <Plug>TwodoDescalate
 endif
 
-if !hasmapto('<Plug>TwodoNextIncomplete') && !maparg(']u', 'n')
+if !hasmapto('<Plug>TwodoNextIncomplete', 'n') && !maparg(']u', 'n')
 	nmap <buffer> ]u <Plug>TwodoNextIncomplete
+endif
+
+if !hasmapto('<Plug>TwodoNextIncomplete', 'o') && !maparg(']u', 'o')
 	omap <buffer> ]u <Plug>TwodoNextIncomplete
 endif
 
-if !hasmapto('<Plug>TwodoPreviousIncomplete') && !maparg('[u', 'n')
+if !hasmapto('<Plug>TwodoPreviousIncomplete', 'n') && !maparg('[u', 'n')
 	nmap <buffer> [u <Plug>TwodoPreviousIncomplete
+endif
+
+if !hasmapto('<Plug>TwodoPreviousIncomplete', 'o') && !maparg('[u', 'o')
 	omap <buffer> [u <Plug>TwodoPreviousIncomplete
 endif
