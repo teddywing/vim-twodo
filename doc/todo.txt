@@ -71,6 +71,18 @@ MAPPINGS                                                       *todo-mappings*
 
 	Default: <leader>-
 
+				*todo-<Plug>TwodoNextIncomplete*
+<Plug>TwodoNextIncomplete
+	Move to the next [count] unfinished to-do.
+
+	Default: ]u
+
+				*todo-<Plug>TwodoPreviousIncomplete*
+<Plug>TwodoPreviousIncomplete
+	Move to the previous [count] unfinished to-do.
+
+	Default: [u
+
 
 ==============================================================================
 COLOURS                                                          *todo-colors*
