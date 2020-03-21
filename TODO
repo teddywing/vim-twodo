@@ -19,4 +19,4 @@ Escalation and "descalation" should be an operator-pending mapping
 v Don't save edits in search history
 - Add repeat support
 - Add license headers
-- Add no_plugin_maps support
+v Add no_plugin_maps support
