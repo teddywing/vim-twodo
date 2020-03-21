@@ -17,6 +17,10 @@ nnoremap <silent> <buffer> <Plug>TwodoDescalate :<c-u>call todo#Descalate()<cr>
 
 nnoremap <silent> <buffer> <Plug>TwodoNextIncomplete :<c-u>call todo#motion#NextIncomplete()<cr>
 nnoremap <silent> <buffer> <Plug>TwodoPreviousIncomplete :<c-u>call todo#motion#PreviousIncomplete()<cr>
+xnoremap <silent> <buffer> <Plug>TwodoNextIncomplete :<c-u>call todo#motion#NextIncomplete()<cr>v''o
+xnoremap <silent> <buffer> <Plug>TwodoPreviousIncomplete :<c-u>call todo#motion#PreviousIncomplete()<cr>v''o
+onoremap <silent> <buffer> <Plug>TwodoNextIncomplete :<c-u>call todo#motion#NextIncomplete()<cr>
+onoremap <silent> <buffer> <Plug>TwodoPreviousIncomplete :<c-u>call todo#motion#PreviousIncomplete()<cr>
 
 if !hasmapto('<Plug>TwodoNewTodoBelow') || !maparg('<leader>n', 'n')
 	nmap <silent> <buffer> <leader>n <Plug>TwodoNewTodoBelow
@@ -52,8 +56,12 @@ endif
 
 if !hasmapto('<Plug>TwodoNextIncomplete') && !maparg(']u', 'n')
 	nmap <buffer> ]u <Plug>TwodoNextIncomplete
+	xmap <buffer> ]u <Plug>TwodoNextIncomplete
+	omap <buffer> ]u <Plug>TwodoNextIncomplete
 endif
 
 if !hasmapto('<Plug>TwodoPreviousIncomplete') && !maparg('[u', 'n')
 	nmap <buffer> [u <Plug>TwodoPreviousIncomplete
+	xmap <buffer> [u <Plug>TwodoPreviousIncomplete
+	omap <buffer> [u <Plug>TwodoPreviousIncomplete
 endif
