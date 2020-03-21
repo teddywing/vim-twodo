@@ -3,8 +3,9 @@ if exists("b:did_ftplugin")
 endif
 let b:did_ftplugin = 1
 
-" TODO: Add no_plugin_mappings or whatever
-
+if exists('g:no_plugin_maps') || exists('g:no_todo_maps')
+	finish
+endif
 
 nnoremap <silent> <buffer> <Plug>TwodoNewTodoBelow o- 
 nnoremap <silent> <buffer> <Plug>TwodoNewTodoAbove O- 
