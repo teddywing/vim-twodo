@@ -1,14 +1,14 @@
 let s:INCOMPLETE_MATCHER = '^\s*[\-_!] '
 
 
-function! s:Incomplete(search_flags)
+function! s:Incomplete(extra_search_flags)
 	let cnt = v:count1
 
-	normal! m'
+	let search_flags = 's' . a:extra_search_flags
 
 	let i = 0
 	while i < cnt
-		call search(s:INCOMPLETE_MATCHER, a:search_flags)
+		call search(s:INCOMPLETE_MATCHER, search_flags)
 		let i += 1
 	endwhile
 endfunction
