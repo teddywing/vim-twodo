@@ -8,10 +8,10 @@ let b:did_ftplugin = 1
 
 nnoremap <silent> <buffer> <Plug>TwodoNewTodoBelow o- 
 nnoremap <silent> <buffer> <Plug>TwodoNewTodoAbove O- 
-nnoremap <silent> <buffer> <Plug>TwodoMarkComplete m`:<c-u>s/\v^(\s*)[-_!xS] /\1v / \| nohlsearch<cr>``
-nnoremap <silent> <buffer> <Plug>TwodoMarkDeleted m`:<c-u>s/\v^(\s*)[-_!vS] /\1x / \| nohlsearch<cr>``
-nnoremap <silent> <buffer> <Plug>TwodoMarkPartiallyCompleted m`:<c-u>s/\v^(\s*)[-_!xv] /\1S / \| nohlsearch<cr>``
-nnoremap <silent> <buffer> <Plug>TwodoRemoveOldTodos :<c-u>g/^\s*[vx] /d \| nohlsearch<cr>
+nnoremap <silent> <buffer> <Plug>TwodoMarkComplete :<c-u>call todo#MarkComplete()<cr>
+nnoremap <silent> <buffer> <Plug>TwodoMarkDeleted :<c-u>call todo#MarkDeleted()<cr>
+nnoremap <silent> <buffer> <Plug>TwodoMarkPartiallyCompleted :<c-u>call todo#MarkPartiallyCompleted()<cr>
+nnoremap <silent> <buffer> <Plug>TwodoRemoveOldTodos :<c-u>call todo#RemoveOldTodos()<cr>
 nnoremap <silent> <buffer> <Plug>TwodoEscalate :<c-u>call todo#Escalate()<cr>
 nnoremap <silent> <buffer> <Plug>TwodoDescalate :<c-u>call todo#Descalate()<cr>
 
