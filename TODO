@@ -12,3 +12,10 @@ highlight todoUnimportant ctermfg=243
 Escalation and "descalation" should be an operator-pending mapping
 
 - Allow ranges in mappings
+
+
+2020.03.21:
+- Add changelog
+- Don't save edits in search history
+- Add repeat support
+- Add license headers
