@@ -1,0 +1,20 @@
+CHANGELOG
+=========
+
+v0.1.0 (2020-03-21):
+	Additions:
+
+	* Add `]u` and `[u` mappings to move to the next and previous unfinished
+	  to-do.
+	* Allow ftplugin mappings to be disabled by setting `g:no_plugin_maps` or
+	  `g:no_todo_maps`.
+	* Commands now support dot-repeat via repeat.vim.
+
+	Fixes:
+
+	* Don't modify the search history when running commands.
+
+v0.0.1 (2016-10-17):
+	First public release.
+
+ vim:tw=80:comments+=fb\:*:
