@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+v0.1.1 (2020-03-21):
+	Fixes:
+
+	* Prevent default mappings from overwriting existing mappings in certain
+	  cases.
+
 v0.1.0 (2020-03-21):
 	Additions:
 
