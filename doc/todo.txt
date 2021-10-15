@@ -8,12 +8,12 @@ Version: 0.1.1
 INTRODUCTION                                                            *todo*
 
 Syntax highlighting and mappings to view and manipulate to-do lists. Files
-should end in a `.todo` extension.
+should end in a ".todo" extension.
 
 ==============================================================================
 EXAMPLE                                                         *todo-example*
 
-    - Regular priority to-dos are prefixed with a `- `
+    - Regular priority to-dos are prefixed with a "- "
     _ A low priority to-do
     ! A high priority to-do
     x A deleted to-do
