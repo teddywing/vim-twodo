@@ -1,4 +1,4 @@
-" Copyright (c) 2016, 2020 Teddy Wing
+" Copyright (c) 2016, 2020, 2021 Teddy Wing
 "
 " Twodo is free software: you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
