@@ -36,36 +36,36 @@ nnoremap <silent> <buffer> <Plug>TwodoPreviousIncomplete :<c-u>call todo#motion#
 onoremap <silent> <buffer> <Plug>TwodoNextIncomplete :<c-u>call todo#motion#NextIncomplete()<cr>
 onoremap <silent> <buffer> <Plug>TwodoPreviousIncomplete :<c-u>call todo#motion#PreviousIncomplete()<cr>
 
-if !hasmapto('<Plug>TwodoNewTodoBelow') && !maparg('<leader>n', 'n')
-	nmap <silent> <buffer> <leader>n <Plug>TwodoNewTodoBelow
+if !hasmapto('<Plug>TwodoNewTodoBelow') && !maparg('<LocalLeader>n', 'n')
+	nmap <silent> <buffer> <LocalLeader>n <Plug>TwodoNewTodoBelow
 endif
 
-if !hasmapto('<Plug>TwodoNewTodoAbove') && !maparg('<leader>N', 'n')
-	nmap <silent> <buffer> <leader>N <Plug>TwodoNewTodoAbove
+if !hasmapto('<Plug>TwodoNewTodoAbove') && !maparg('<LocalLeader>N', 'n')
+	nmap <silent> <buffer> <LocalLeader>N <Plug>TwodoNewTodoAbove
 endif
 
-if !hasmapto('<Plug>TwodoMarkComplete') && !maparg('<leader>c', 'n')
-	nmap <silent> <buffer> <leader>c <Plug>TwodoMarkComplete
+if !hasmapto('<Plug>TwodoMarkComplete') && !maparg('<LocalLeader>c', 'n')
+	nmap <silent> <buffer> <LocalLeader>c <Plug>TwodoMarkComplete
 endif
 
-if !hasmapto('<Plug>TwodoMarkDeleted') && !maparg('<leader>d', 'n')
-	nmap <silent> <buffer> <leader>d <Plug>TwodoMarkDeleted
+if !hasmapto('<Plug>TwodoMarkDeleted') && !maparg('<LocalLeader>d', 'n')
+	nmap <silent> <buffer> <LocalLeader>d <Plug>TwodoMarkDeleted
 endif
 
-if !hasmapto('<Plug>TwodoMarkPartiallyCompleted') && !maparg('<leader>s', 'n')
-	nmap <silent> <buffer> <leader>s <Plug>TwodoMarkPartiallyCompleted
+if !hasmapto('<Plug>TwodoMarkPartiallyCompleted') && !maparg('<LocalLeader>s', 'n')
+	nmap <silent> <buffer> <LocalLeader>s <Plug>TwodoMarkPartiallyCompleted
 endif
 
-if !hasmapto('<Plug>TwodoRemoveOldTodos') && !maparg('<leader>R', 'n')
-	nmap <silent> <buffer> <leader>R <Plug>TwodoRemoveOldTodos
+if !hasmapto('<Plug>TwodoRemoveOldTodos') && !maparg('<LocalLeader>R', 'n')
+	nmap <silent> <buffer> <LocalLeader>R <Plug>TwodoRemoveOldTodos
 endif
 
-if !hasmapto('<Plug>TwodoEscalate') && !maparg('<leader>=', 'n')
-	nmap <silent> <buffer> <leader>= <Plug>TwodoEscalate
+if !hasmapto('<Plug>TwodoEscalate') && !maparg('<LocalLeader>=', 'n')
+	nmap <silent> <buffer> <LocalLeader>= <Plug>TwodoEscalate
 endif
 
-if !hasmapto('<Plug>TwodoDescalate') && !maparg('<leader>-', 'n')
-	nmap <silent> <buffer> <leader>- <Plug>TwodoDescalate
+if !hasmapto('<Plug>TwodoDescalate') && !maparg('<LocalLeader>-', 'n')
+	nmap <silent> <buffer> <LocalLeader>- <Plug>TwodoDescalate
 endif
 
 if !hasmapto('<Plug>TwodoNextIncomplete', 'n') && !maparg(']u', 'n')

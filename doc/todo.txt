@@ -27,49 +27,49 @@ MAPPINGS                                                       *todo-mappings*
 <Plug>TwodoNewTodoBelow
 	Add a new to-do below the current line.
 
-	Default: <leader>n
+	Default: <LocalLeader>n
 
 				*todo-<Plug>TwodoNewTodoAbove*
 <Plug>TwodoNewTodoAbove
 	Add a new to-do above the current line.
 
-	Default: <leader>N
+	Default: <LocalLeader>N
 
 				*todo-<Plug>TwodoMarkComplete*
 <Plug>TwodoMarkComplete
 	Mark the current to-do complete.
 
-	Default: <leader>c
+	Default: <LocalLeader>c
 
 				*todo-<Plug>TwodoMarkDeleted*
 <Plug>TwodoMarkDeleted
 	Mark the current to-do deleted.
 
-	Default: <leader>d
+	Default: <LocalLeader>d
 
 				*todo-<Plug>TwodoMarkPartiallyCompleted*
 <Plug>TwodoMarkPartiallyCompleted
 	Mark the current to-do partially complete.
 
-	Default: <leader>s
+	Default: <LocalLeader>s
 
 				*todo-<Plug>TwodoRemoveOldTodos*
 <Plug>TwodoRemoveOldTodos
 	Remove todos marked complete and deleted.
 
-	Default: <leader>R
+	Default: <LocalLeader>R
 
 				*todo-<Plug>TwodoEscalate*
 <Plug>TwodoEscalate
 	Increase the priority of the current to-do.
 
-	Default: <leader>=
+	Default: <LocalLeader>=
 
 				*todo-<Plug>TwodoDescalate*
 <Plug>TwodoDescalate
 	Decrease the priority of the current to-do.
 
-	Default: <leader>-
+	Default: <LocalLeader>-
 
 				*todo-<Plug>TwodoNextIncomplete*
 <Plug>TwodoNextIncomplete
