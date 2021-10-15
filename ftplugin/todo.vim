@@ -36,6 +36,16 @@ nnoremap <silent> <buffer> <Plug>TwodoPreviousIncomplete :<c-u>call todo#motion#
 onoremap <silent> <buffer> <Plug>TwodoNextIncomplete :<c-u>call todo#motion#NextIncomplete()<cr>
 onoremap <silent> <buffer> <Plug>TwodoPreviousIncomplete :<c-u>call todo#motion#PreviousIncomplete()<cr>
 
+nnoremap <silent> <buffer> <Plug>TwodoNextRegular :<c-u>call todo#motion#NextRegular()<cr>
+nnoremap <silent> <buffer> <Plug>TwodoPreviousRegular :<c-u>call todo#motion#PreviousRegular()<cr>
+onoremap <silent> <buffer> <Plug>TwodoNextRegular :<c-u>call todo#motion#NextRegular()<cr>
+onoremap <silent> <buffer> <Plug>TwodoPreviousRegular :<c-u>call todo#motion#PreviousRegular()<cr>
+
+nnoremap <silent> <buffer> <Plug>TwodoNextImportant :<c-u>call todo#motion#NextImportant()<cr>
+nnoremap <silent> <buffer> <Plug>TwodoPreviousImportant :<c-u>call todo#motion#PreviousImportant()<cr>
+onoremap <silent> <buffer> <Plug>TwodoNextImportant :<c-u>call todo#motion#NextImportant()<cr>
+onoremap <silent> <buffer> <Plug>TwodoPreviousImportant :<c-u>call todo#motion#PreviousImportant()<cr>
+
 if !hasmapto('<Plug>TwodoNewTodoBelow') && !maparg('<LocalLeader>n', 'n')
 	nmap <silent> <buffer> <LocalLeader>n <Plug>TwodoNewTodoBelow
 endif
@@ -82,4 +92,36 @@ endif
 
 if !hasmapto('<Plug>TwodoPreviousIncomplete', 'o') && !maparg('[u', 'o')
 	omap <buffer> [u <Plug>TwodoPreviousIncomplete
+endif
+
+if !hasmapto('<Plug>TwodoNextRegular', 'n') && !maparg(']o', 'n')
+	nmap <buffer> ]o <Plug>TwodoNextRegular
+endif
+
+if !hasmapto('<Plug>TwodoNextRegular', 'o') && !maparg(']o', 'o')
+	omap <buffer> ]o <Plug>TwodoNextRegular
+endif
+
+if !hasmapto('<Plug>TwodoPreviousRegular', 'n') && !maparg('[o', 'n')
+	nmap <buffer> [o <Plug>TwodoPreviousRegular
+endif
+
+if !hasmapto('<Plug>TwodoPreviousRegular', 'o') && !maparg('[o', 'o')
+	omap <buffer> [o <Plug>TwodoPreviousRegular
+endif
+
+if !hasmapto('<Plug>TwodoNextImportant', 'n') && !maparg(']y', 'n')
+	nmap <buffer> ]y <Plug>TwodoNextImportant
+endif
+
+if !hasmapto('<Plug>TwodoNextImportant', 'o') && !maparg(']y', 'o')
+	omap <buffer> ]y <Plug>TwodoNextImportant
+endif
+
+if !hasmapto('<Plug>TwodoPreviousImportant', 'n') && !maparg('[y', 'n')
+	nmap <buffer> [y <Plug>TwodoPreviousImportant
+endif
+
+if !hasmapto('<Plug>TwodoPreviousImportant', 'o') && !maparg('[y', 'o')
+	omap <buffer> [y <Plug>TwodoPreviousImportant
 endif

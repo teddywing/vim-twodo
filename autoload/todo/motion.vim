@@ -14,26 +14,48 @@
 " along with Twodo. If not, see <http://www.gnu.org/licenses/>.
 
 let s:INCOMPLETE_MATCHER = '^\s*[\-_!] '
+let s:REGULAR_MATCHER = '^\s*- '
+let s:IMPORTANT_MATCHER = '^\s*! '
 
 
-function! s:Incomplete(extra_search_flags)
+function! s:Search(pattern, extra_search_flags)
 	let cnt = v:count1
 
 	let search_flags = 's' . a:extra_search_flags
 
 	let i = 0
 	while i < cnt
-		call search(s:INCOMPLETE_MATCHER, search_flags)
+		call search(a:pattern, search_flags)
 		let i += 1
 	endwhile
 endfunction
 
 
 function! todo#motion#NextIncomplete()
-	call s:Incomplete('')
+	call s:Search(s:INCOMPLETE_MATCHER, '')
 endfunction
 
 
 function! todo#motion#PreviousIncomplete()
-	call s:Incomplete('b')
+	call s:Search(s:INCOMPLETE_MATCHER, 'b')
+endfunction
+
+
+function! todo#motion#NextRegular()
+	call s:Search(s:REGULAR_MATCHER, '')
+endfunction
+
+
+function! todo#motion#PreviousRegular()
+	call s:Search(s:REGULAR_MATCHER, 'b')
+endfunction
+
+
+function! todo#motion#NextImportant()
+	call s:Search(s:IMPORTANT_MATCHER, '')
+endfunction
+
+
+function! todo#motion#PreviousImportant()
+	call s:Search(s:IMPORTANT_MATCHER, 'b')
 endfunction
