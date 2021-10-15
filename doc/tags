@@ -6,8 +6,12 @@ todo-<Plug>TwodoMarkDeleted	todo.txt	/*todo-<Plug>TwodoMarkDeleted*
 todo-<Plug>TwodoMarkPartiallyCompleted	todo.txt	/*todo-<Plug>TwodoMarkPartiallyCompleted*
 todo-<Plug>TwodoNewTodoAbove	todo.txt	/*todo-<Plug>TwodoNewTodoAbove*
 todo-<Plug>TwodoNewTodoBelow	todo.txt	/*todo-<Plug>TwodoNewTodoBelow*
+todo-<Plug>TwodoNextImportant	todo.txt	/*todo-<Plug>TwodoNextImportant*
 todo-<Plug>TwodoNextIncomplete	todo.txt	/*todo-<Plug>TwodoNextIncomplete*
+todo-<Plug>TwodoNextRegular	todo.txt	/*todo-<Plug>TwodoNextRegular*
+todo-<Plug>TwodoPreviousImportant	todo.txt	/*todo-<Plug>TwodoPreviousImportant*
 todo-<Plug>TwodoPreviousIncomplete	todo.txt	/*todo-<Plug>TwodoPreviousIncomplete*
+todo-<Plug>TwodoPreviousRegular	todo.txt	/*todo-<Plug>TwodoPreviousRegular*
 todo-<Plug>TwodoRemoveOldTodos	todo.txt	/*todo-<Plug>TwodoRemoveOldTodos*
 todo-colors	todo.txt	/*todo-colors*
 todo-example	todo.txt	/*todo-example*

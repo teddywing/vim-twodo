@@ -73,15 +73,39 @@ MAPPINGS                                                       *todo-mappings*
 
 				*todo-<Plug>TwodoNextIncomplete*
 <Plug>TwodoNextIncomplete
-	Move to the next [count] unfinished to-do.
+	Move to the next [count] unfinished to-do. (Mnemonic: "unfinished")
 
 	Default: ]u
 
 				*todo-<Plug>TwodoPreviousIncomplete*
 <Plug>TwodoPreviousIncomplete
-	Move to the previous [count] unfinished to-do.
+	Move to the previous [count] unfinished to-do. (Mnemonic: "unfinished")
 
 	Default: [u
+
+				*todo-<Plug>TwodoNextRegular*
+<Plug>TwodoNextRegular
+	Move to the next [count] unfinished to-do. (Mnemonic: "ordinary")
+
+	Default: ]o
+
+				*todo-<Plug>TwodoPreviousRegular*
+<Plug>TwodoPreviousRegular
+	Move to the previous [count] unfinished to-do. (Mnemonic: "ordinary")
+
+	Default: [o
+
+				*todo-<Plug>TwodoNextImportant*
+<Plug>TwodoNextImportant
+	Move to the next [count] unfinished to-do. (Mnemonic: "yimportant")
+
+	Default: ]y
+
+				*todo-<Plug>TwodoPreviousImportant*
+<Plug>TwodoPreviousImportant
+	Move to the previous [count] unfinished to-do. (Mnemonic: "yimportant")
+
+	Default: [y
 
 
 ==============================================================================
